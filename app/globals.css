@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 221 83% 53%;
+    --card: 0 0% 100%;
+    --card-foreground: 221 83% 53%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 221 83% 53%;
+    --primary: 221 83% 53%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 213 100% 96%;
+    --secondary-foreground: 221 83% 53%;
+    --muted: 213 100% 96%;
+    --muted-foreground: 215 20% 65%;
+    --accent: 213 100% 96%;
+    --accent-foreground: 221 83% 53%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 221 83% 53%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 221 83% 53%;
+    --foreground: 210 40% 98%;
+    --card: 221 83% 53%;
+    --card-foreground: 210 40% 98%;
+    --popover: 221 83% 53%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 210 40% 98%;
+    --primary-foreground: 221 83% 53%;
+    --secondary: 217 33% 17%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 20% 65%;
+    --accent: 217 33% 17%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217 33% 17%;
+    --input: 217 33% 17%;
+    --ring: 224 76% 48%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-blue-900;
+  }
+}
+
+.prose h3 {
+  @apply text-lg font-semibold text-blue-900 mt-6 mb-3;
+}
+
+.prose ul {
+  @apply list-disc pl-6 mb-4 space-y-1 text-blue-800;
+}
+
+.prose p {
+  @apply mb-4 text-blue-800;
+}
