@@ -277,14 +277,14 @@ export default function AdminDashboard() {
 
       <main className="container mx-auto px-4 py-8">
         <Tabs defaultValue="jobs">
-          <TabsList className="grid w-full grid-cols-3 mb-8 bg-blue-100">
+          <TabsList className="grid w-full grid-cols-1 mb-8 bg-blue-100">
             <TabsTrigger
               value="jobs"
               className="flex items-center text-blue-700 data-[state=active]:bg-blue-600 data-[state=active]:text-white"
             >
               <Briefcase className="mr-2 h-4 w-4" /> Jobs
             </TabsTrigger>
-            <TabsTrigger
+            {/* <TabsTrigger
               value="testimonials"
               className="flex items-center text-blue-700 data-[state=active]:bg-blue-600 data-[state=active]:text-white"
             >
@@ -295,7 +295,7 @@ export default function AdminDashboard() {
               className="flex items-center text-blue-700 data-[state=active]:bg-blue-600 data-[state=active]:text-white"
             >
               <Building className="mr-2 h-4 w-4" /> Clients
-            </TabsTrigger>
+            </TabsTrigger> */}
           </TabsList>
 
           {/* Jobs Tab */}

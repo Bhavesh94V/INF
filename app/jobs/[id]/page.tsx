@@ -380,6 +380,7 @@ export default function JobDetailPage() {
                           <input
                             id="resume-upload"
                             type="file"
+                            name="resume"
                             accept=".pdf,.doc,.docx"
                             className="hidden"
                             onChange={handleFileChange}

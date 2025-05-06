@@ -29,9 +29,12 @@ export default function Home() {
                     Browse Opportunities <ArrowRight className="ml-2 h-5 w-5" />
                   </Link>
                 </Button>
-                <Button size="lg" variant="outline" className="border-white text-blue-700 hover:bg-blue-700">
-                  <Link href="/about">Learn More About Us</Link>
-                </Button>
+                <a href="/about">
+                  <button className="px-8 w-full py-2.5 text-md border rounded-lg border-white text-white hover:bg-white hover:text-blue-700 transition-colors duration-300">
+                    Learn More About Us
+                  </button>
+                </a>
+
               </div>
             </div>
           </FadeInSection>
@@ -198,17 +201,18 @@ export default function Home() {
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <FadeInSection>
-            <div className="flex justify-between items-center mb-12">
+            <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-12">
               <div>
-                <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Featured Opportunities</h2>
+                <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-2">Featured Opportunities</h2>
                 <p className="text-lg text-gray-600">Explore our latest premium job openings</p>
               </div>
-              <Link href="/jobs">
-                <Button variant="outline" className="border-blue-600 text-blue-600 hover:bg-blue-50">
+              <a href="/jobs">
+                <button className="px-5 py-2 text-blue-600 border border-blue-600 hover:bg-blue-50 rounded transition-colors duration-300">
                   View All Jobs
-                </Button>
-              </Link>
+                </button>
+              </a>
             </div>
+
           </FadeInSection>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -408,9 +412,12 @@ export default function Home() {
                 <Button size="lg" className="bg-white text-blue-700 hover:bg-blue-50">
                   <Link href="/contact">Contact Our Team</Link>
                 </Button>
-                <Button size="lg" variant="outline" className="border-white text-blue-700 hover:bg-blue-700">
-                  <Link href="/jobs">Browse Opportunities</Link>
-                </Button>
+                <a href="/jobs">
+                  <button className="px-6 py-2.5 rounded-md w-full text-[15px] font-medium border border-white  text-white hover:bg-white hover:text-blue-700 transition-colors duration-300">
+                    Browse Opportunities
+                  </button>
+                </a>
+
               </div>
             </div>
           </FadeInSection>
